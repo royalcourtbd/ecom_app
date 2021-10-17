@@ -44,23 +44,25 @@ class _HomePageState extends State<HomePage> {
   ];
   late DateTime _dateTime;
 
-  _getDateTime() {
-    setState(() {
-      _dateTime = DateTime.now();
-    });
-  }
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-  }
+  // _getDateTime() {
+  //   setState(() {
+  //     _dateTime = DateTime.now();
+  //   });
+  // }
+  // @override
+  // void dispose() {
+  //   // TODO: implement dispose
+  //   super.dispose();
+  //
+  // }
+  //
+  // @override
+  // void initState() {
+  //   _getDateTime();
+  //   super.initState();
+  //   Timer.periodic(Duration(seconds: 1), (_) => _getDateTime());
+  // }
 
-  @override
-  void initState() {
-    _getDateTime();
-    super.initState();
-    Timer.periodic(Duration(seconds: 1), (_) => _getDateTime());
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -188,11 +190,11 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.grey[350],
                         borderRadius: BorderRadius.circular(5),
                       ),
-                      child: Text(
-                        _dateTime.hour.toString(),
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w500),
-                      ),
+                      // child: Text(
+                      //   _dateTime.hour.toString(),
+                      //   style: TextStyle(
+                      //       fontSize: 16, fontWeight: FontWeight.w500),
+                      // ),
                     ),
                     SizedBox(
                       width: 3,
@@ -205,11 +207,11 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.grey[350],
                         borderRadius: BorderRadius.circular(5),
                       ),
-                      child: Text(
-                        _dateTime.minute.toString(),
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w500),
-                      ),
+                      // child: Text(
+                      //   _dateTime.minute.toString(),
+                      //   style: TextStyle(
+                      //       fontSize: 16, fontWeight: FontWeight.w500),
+                      // ),
                     ),
                     SizedBox(
                       width: 3,
@@ -222,11 +224,11 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.grey[350],
                         borderRadius: BorderRadius.circular(5),
                       ),
-                      child: Text(
-                        _dateTime.second.toString(),
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w500),
-                      ),
+                      // child: Text(
+                      //   _dateTime.second.toString(),
+                      //   style: TextStyle(
+                      //       fontSize: 16, fontWeight: FontWeight.w500),
+                      // ),
                     ),
                     SizedBox(
                       width: 3,

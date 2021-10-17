@@ -1,3 +1,4 @@
+import 'package:ecom_app/widgets/message_bubble.dart';
 import 'package:flutter/material.dart';
 
 class Message extends StatefulWidget {
@@ -8,10 +9,10 @@ class Message extends StatefulWidget {
 class _MessageState extends State<Message> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
-        child: Text('Message',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
-      ),
+    return Column(
+      children: [
+        MessageBubble()
+      ],
     );
   }
 }
